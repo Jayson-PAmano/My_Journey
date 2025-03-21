@@ -42,3 +42,46 @@ const person2 = {
   },
 };
 person2.getPerson.call(person);
+console.log("__________________________________");
+let colors = ["red", "green", "blue", "yellow"];
+let colors2 = ["pink", "black", "gray", "orange"];
+let fruits = ["apple", "banana", "orange", "grapes"];
+
+let country = [
+  { name: "USA", population: 331002651 },
+  { name: "Canada", population: 37742154 },
+  { name: "Mexico", population: 127575529 },
+];
+
+let i = 0;
+
+while (i < 5) {
+  console.log(i + colors[i]);
+  i++;
+}
+
+let e = 0;
+
+while (e < colors.length) {
+  // console.log(e);
+  console.log(e + " " + colors[e]);
+  e++;
+}
+console.log("\n");
+for (let i = 0; i < fruits.length; i++) {
+  console.log(`index: ${i}`);
+  console.log(`fruit: ${fruits[i]}`);
+}
+
+console.log("\n");
+for (const iterator of colors2) {
+  console.log(iterator);
+}
+
+console.log("\n");
+for (let i = 0; i < country.length; i++) {
+  console.log(
+    i + " " + country[i].name,
+    "population: " + country[i].population
+  );
+}
