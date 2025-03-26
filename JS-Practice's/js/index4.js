@@ -45,6 +45,9 @@ let cars = [
     year: 2008,
   },
 ];
-
+console.dir(cars);
 console.log(cars.map((car) => car.model));
 console.log(cars.filter((car) => car.year > 2000));
+
+console.log(cars.some((car) => car.make == "Ford"));
+console.log(cars.every((car) => car.year > 1990));
