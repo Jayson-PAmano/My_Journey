@@ -46,8 +46,16 @@ let cars = [
   },
 ];
 console.dir(cars);
-console.log(cars.map((car) => car.model));
-console.log(cars.filter((car) => car.year > 2000));
+// console.log(cars.map((car) => car.model));
+// console.log(cars.filter((car) => car.year > 2000));
 
-console.log(cars.some((car) => car.make == "Ford"));
-console.log(cars.every((car) => car.year > 1990));
+// console.log(cars.some((car) => car.make == "Ford"));
+// console.log(cars.every((car) => car.year > 1990));
+
+// console.log(cars.map((car) => car.model));
+
+console.log(cars.map((car) => car.year).reduce((a, b) => a + b));
+
+console.log(cars.find((car) => car.year > 2000));
+
+console.log(cars.findIndex((car) => car.year > 2010));
