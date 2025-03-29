@@ -45,6 +45,8 @@ let cars = [
     year: 2008,
   },
 ];
+let colors = ["red", "green", "blue"];
+let numbers = [22, 32, 11, 53, 123];
 console.dir(cars);
 // console.log(cars.map((car) => car.model));
 // console.log(cars.filter((car) => car.year > 2000));
@@ -54,8 +56,11 @@ console.dir(cars);
 
 // console.log(cars.map((car) => car.model));
 
-console.log(cars.map((car) => car.year).reduce((a, b) => a + b));
+// console.log(cars.map((car) => car.year).reduce((a, b) => a + b));
 
-console.log(cars.find((car) => car.year > 2000));
+// console.log(cars.find((car) => car.year > 2000));
 
-console.log(cars.findIndex((car) => car.year > 2010));
+// console.log(cars.findIndex((car) => car.year > 2010));
+console.log(colors.map((color) => color));
+
+console.log(numbers.filter((num) => num > 32));

@@ -141,15 +141,16 @@ persons.forEach((element, index) => {
 });
 
 const newPersos = persons.map((el) => {
-  return el.name;
+  return el.firstName;
 });
 console.log(newPersos);
 
 const carYears = cars.filter((el) => {
-  return el == 1988;
+  return el.year == 1988;
 });
 console.log(carYears);
-let Numbers = numbers.filter((num) => {
-  return num > 5;
-});
-console.log(Numbers);
+// let Numbers = numbers.filter((num) => {
+//   return num > 5;
+// });
+// console.log(Numbers);
+console.log(numbers.filter((num) => num > 2));
