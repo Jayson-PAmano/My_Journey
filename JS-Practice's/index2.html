@@ -4,10 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript Testing in DOM</title>
+    <style>
+      div {
+        margin: auto 50%;
+        width: 50em;
+      }
+      div > #changeBg {
+        color: rgb(238, 231, 231);
+        background-color: #e59328;
+        border: none;
+        padding: 10px 15px;
+        text-transform: uppercase;
+        font: bold 18px tahoma;
+      }
+      #changeBg:hover {
+        background-color: #fa3613;
+        color: whitesmoke;
+        cursor: pointer;
+        transition: background-color, color, ease-in-out 1s;
+      }
+    </style>
   </head>
   <body>
     <p id="output"></p>
     <p id="output2"></p>
-    <script src="js/practice1.1.js"></script>
+    <p id="output3"></p>
+    <button type="button">Get Results</button>
+    <div>
+      <button type="button" id="changeBg">Change Background</button>
+    </div>
+    <!-- <button type="button" id="logResults">Log Results</button> -->
+    <script src="js/practice1.2.js"></script>
   </body>
 </html>

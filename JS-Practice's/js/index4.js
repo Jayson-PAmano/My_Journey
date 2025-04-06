@@ -60,7 +60,7 @@ console.dir(cars);
 
 // console.log(cars.find((car) => car.year > 2000));
 
-// console.log(cars.findIndex((car) => car.year > 2010));
+console.log(cars.findIndex((car) => car.year > 2010));
 
 console.log(colors.map((color) => color));
 

@@ -106,7 +106,7 @@ let Output2 = document.getElementById("output2");
 // };
 // Output.innerHTML = callPerson1.callPerson.call(person1);
 
-colors.forEach((color, index) => {
-  console.log(color, index);
-  Output.innerHTML += "<br>" + "<h3>" + color + index + "</h3>";
-});
+// colors.forEach((color, index) => {
+//   console.log(color, index);
+//   Output.innerHTML += "<br>" + "<h3>" + color + index + "</h3>";
+// });
