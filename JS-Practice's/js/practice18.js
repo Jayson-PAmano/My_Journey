@@ -50,11 +50,13 @@ let country = [
 getSum = (n1, n2) => n1 + n2;
 console.log(getSum(10, 3));
 
-getResults = (n1, n2) => {
-  return n1 + n2;
-};
-doubleResults = (n1, n2) => {
-  return getResults(n1, n2) * 2;
-};
+getResults = (n1, n2) => n1 + n2;
+
+doubleResults = (n1, n2) => getResults(n1, n2) * 2;
+
 console.log(getResults(5, 10));
 console.log(doubleResults(5, 10));
+
+for (i = 0; i < 10; i++) {
+  console.log(i);
+}
