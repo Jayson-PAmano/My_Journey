@@ -29,6 +29,7 @@ let alphabets = [
   "Y",
   "Z",
 ];
+let index = 0;
 let heroes = "Elemental Hero";
 let country = [
   { name: "USA", population: 331002651 },
@@ -36,27 +37,51 @@ let country = [
   { name: "Mexico", population: 127575529 },
 ];
 /***************************** CODE STARTS **********************************/
-
-// getName = () => {
-//   let name = prompt("Enter your name");
-//   if (name === "jaden") {
-//     console.log(`Hello, ${name}`);
-//   } else {
-//     console.log(`${name} is invalid, Try again!`);
+// getName = (name) => {
+//   while (true) {
+//     name = prompt("What is your name?");
+//     if (name === "jaden") {
+//       console.log(`Hello, ${name}`);
+//       break;
+//     } else {
+//       console.log("Error, try again!");
+//     }
 //   }
 // };
+
 // getName();
 
 getSum = (n1, n2) => n1 + n2;
-console.log(getSum(10, 3));
+console.log(getSum(5, 5));
+getInfo = (name) => `Hello, ${name}`;
+console.log(getInfo("Jaden"));
 
-getResults = (n1, n2) => n1 + n2;
+getSum2 = (num1, num2) => {
+  return num1 + num2;
+};
 
-doubleResults = (n1, n2) => getResults(n1, n2) * 2;
+getAnswer = () => {
+  return getSum2(5, 2) * 2;
+};
 
-console.log(getResults(5, 10));
-console.log(doubleResults(5, 10));
+console.log(getAnswer());
 
-for (i = 0; i < 10; i++) {
-  console.log(i);
+/****
+ * end{code}
+ * ***/
+
+for (i = 0; i < alphabets.length; i++) {
+  console.log(alphabets[i]);
+  if (alphabets[i] === "J") {
+    console.log("Found J at index:" + i);
+    break;
+  }
+}
+while (index < colors.length) {
+  console.log(index + " " + colors[index]);
+  index++;
+  if (colors[index] == "green") {
+    console.log("Found red at index:" + index);
+    break;
+  }
 }
