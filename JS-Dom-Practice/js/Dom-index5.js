@@ -24,7 +24,26 @@ myText.append(boldText);
 body.append(myText);
 
 const changeBg = document.getElementById("box");
+let currentColor = "red";
+const myBtn = (document.querySelector("#mybtn").onclick = () => {
+  if (currentColor === "red") {
+    changeBg.style.backgroundColor = "blue";
+    currentColor = "blue";
+  } else {
+    changeBg.style.backgroundColor = "red";
+    currentColor = "red";
+  }
+});
 
-const myBtn = (document.querySelector("button").onclick = () => {
-  changeBg.style.backgroundColor = "red";
+const MAX_LIMIT = 5;
+let count = 0;
+const countNumber = document.querySelector("h1");
+const limit = document.querySelector("h2");
+countNumber.addEventListener("click", () => {
+  count += 1;
+  countNumber.textContent = count;
+  if (count === MAX_LIMIT) {
+    limit.textContent = "*You've reach the maximum number";
+    limit.style.color = "red";
+  }
 });
