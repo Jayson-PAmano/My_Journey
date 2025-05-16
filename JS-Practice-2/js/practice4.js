@@ -1,7 +1,7 @@
 let fruits = ["apple", "orange", "grapes"];
 let colors = ["red", "green", "blue", "yellow"];
 let counter = 0;
-let heroes = "Elemental Heroes".toUpperCase();
+let heroes = "Elemental Heroes";
 
 let prices = [100, 250, 75, 180];
 let discount = 0.2; // 20% discount
@@ -66,17 +66,21 @@ function myFunc(a, b) {
 
 //Loops
 while (counter <= 10) {
-  //   console.log("\n");
   console.log("\n" + "Number: " + counter);
   counter++;
 }
 
 for (let i = 0; i < prices.length; i++) {
-  //   console.log(prices[i]);
-
   let discountedPrice = prices[i] - prices[i] * discount;
   console.log(
     "Original price: " + prices[i] + " discounted price: " + discountedPrice
   );
-  console.log(prices[i] - discountedPrice);
+
+  console.log(prices[i] - discountedPrice + " is the total amount");
 }
+
+for (i = 10; i >= 0; i--) {
+  console.log("Count down: " + i);
+}
+console.log("Blast off.... 🚀");
+// document.write(heroes.fontcolor("red"));
