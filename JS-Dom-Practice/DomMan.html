@@ -49,6 +49,10 @@
         width: 50%;
         margin: 0 auto;
       }
+      #my_Div {
+        margin: 2rem auto;
+        text-align: center;
+      }
     </style>
     <title>Dom Manipulation | WDS</title>
   </head>
@@ -78,11 +82,23 @@
         <span id="results2" style="text-align: center; font-size: 1.5em"></span>
       </form>
     </fieldset>
+    <div id="my_Div">
+      <p id="name_Results"></p>
+      <label for="Name">Enter Name:</label>
+      <input
+        type="text"
+        name="Name"
+        id="getName"
+        placeholder="e.g Juan DelaCruz"
+      />
+      <input type="button" value="Submit" onclick="getName()" />
+    </div>
     <div id="center-text">
       <h1>0</h1>
       <h2></h2>
       <button style="font-size: 1.2em" id="addOne">+1</button>
     </div>
+
     <div id="box"></div>
     <button id="mybtn" onclick="changeBg()">click me</button>
 
@@ -92,6 +108,6 @@
       <span id="bye" data-test2="this is also at test">bye</span>
       <!-- <span id="hello">nice to meet you</span> -->
     </div>
-    <script src="js/Dom-index6.js"></script>
+    <script src="js/Dom-index7.js"></script>
   </body>
 </html>
