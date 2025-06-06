@@ -1,0 +1,55 @@
+#box {
+  max-width: 1000px;
+  height: 500px;
+  /* background-color: tomato; */
+  margin: 0 auto;
+  color: #333;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#box > div {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+}
+#box div:nth-child(odd) {
+  background-color: seagreen;
+}
+#box div:nth-child(even) {
+  background-color: yellow;
+}
+
+#box2 {
+  max-width: 1000px;
+  height: 500px;
+  /* background-color: tomato; */
+  margin: 0 auto;
+  color: #333;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#box2 > div {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+}
+#box2 div:nth-child(odd) {
+  background-color: seagreen;
+}
+#box2 div:nth-child(even) {
+  background-color: yellow;
+}
