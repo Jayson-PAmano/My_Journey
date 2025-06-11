@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Dom practice</title>
+  </head>
+  <body>
+    <label for="myName">Name:</label>
+    <input
+      type="text"
+      name="Name"
+      id="myName"
+      placeholder="e.g Juan DelaCruz"
+      required
+    />
+    <button id="getName" type="button">Enter</button>
+    <p id="Results"></p>
+
+    <br />
+
+    <h1 id="countNum">0</h1>
+    <button id="btnCount">Count</button>
+
+    <br />
+    <br />
+    <label for="num1">Number 1:</label>
+    <input type="number" name="num1" id="num1" placeholder="e.g 23." />
+    <br /><br />
+    <label for="num1">Number 2:</label>
+    <input type="number" name="num2" id="num2" placeholder="e.g 45." />
+    <br /><br />
+    <button type="button" onclick="addNums()">Add</button>
+    <p id="sumResults"></p>
+
+    <script src="js2/dom1.js"></script>
+  </body>
+</html>
