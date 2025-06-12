@@ -3,6 +3,7 @@ let colors = ["red", "green", "blue", "yellow"];
 let counter = 0;
 let heroes = "Elemental Heroes";
 let letters = ["a", "b", "c"];
+let letters2 = ["d", "e", "f"];
 const person = [
   {
     firstName: "John",
@@ -97,5 +98,11 @@ for (let i = 0; i < letters.length; i++) {
 }
 
 function logLetters(element, index) {
+  console.log(index, element);
+}
+for (let i = 0; i < letters2.length; i++) {
+  logLetters(letters2[i], i);
+}
+function logMyLetters(element, index) {
   console.log(index, element);
 }
