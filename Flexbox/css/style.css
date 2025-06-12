@@ -2,6 +2,7 @@
   max-width: 1000px;
   height: 500px;
   /* background-color: tomato; */
+  border: 1px solid #333;
   margin: 0 auto;
   color: #333;
   font-weight: bold;
@@ -21,35 +22,36 @@
 }
 #box div:nth-child(odd) {
   background-color: seagreen;
+  color: whitesmoke;
+  flex-grow: 1;
+
+  /* animation-name: changeBg;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite; */
 }
 #box div:nth-child(even) {
   background-color: yellow;
+  color: whitesmoke;
+  flex-grow: 2;
+  /* animation-name: changeBg2;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite; */
 }
-
-#box2 {
-  max-width: 1000px;
-  height: 500px;
-  /* background-color: tomato; */
-  margin: 0 auto;
-  color: #333;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
+/* @keyframes changeBg {
+  from {
+    background-color: seagreen;
+  }
+  to {
+    background-color: orange;
+  }
 }
-#box2 > div {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  height: 100px;
-}
-#box2 div:nth-child(odd) {
-  background-color: seagreen;
-}
-#box2 div:nth-child(even) {
-  background-color: yellow;
-}
+@keyframes changeBg2 {
+  from {
+    background-color: yellow;
+  }
+  to {
+    background-color: blue;
+  }
+} */
