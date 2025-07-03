@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Practice</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #555;
+        margin: 10em auto;
+        color: #dcdc16;
+        font: bold 1.5em "Times New Roman", serif;
+      }
+      button {
+        border: none;
+        border-radius: 5px;
+        text-transform: capitalize;
+        padding: 0.8em 1.4em;
+        font: 0.7em "Times New Roman", serif;
+        letter-spacing: 1px;
+        background-color: seagreen;
+        color: whitesmoke;
+        transition: all 0.5s ease-in-out;
+      }
+      button:hover {
+        cursor: pointer;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5),
+          /* Outer shadow */ inset 2px 2px 5px rgba(0, 0, 0, 0.2),
+          /* Inset inner shadow */ -2px -2px 5px rgba(255, 255, 255, 0.3); /* Light highlight */
+        background-color: #3e8e41;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="header">Hello World</h1>
+    <button>Change text</button>
+    <script src="js/index2.js"></script>
+  </body>
+</html>
