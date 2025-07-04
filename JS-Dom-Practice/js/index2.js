@@ -1,6 +1,15 @@
 const changeTitle = document.querySelector("button");
 changeTitle.addEventListener("click", function () {
-  let title = document.querySelector("h1").textContent;
+  document.querySelector("h1").textContent;
   let newTitle = prompt("Enter new title");
-  document.querySelector("h1").textContent = "Hello, " + newTitle;
+
+  if (newTitle === "") {
+    document.querySelector("h1").textContent = "*Please do not leave empty";
+    document.querySelector("h1").style.color = "red";
+  } else if (newTitle === null) {
+    document.querySelector("h1").textContent = "*Please do not leave empty";
+  } else {
+    document.querySelector("h1").textContent = "Hello, " + newTitle;
+    document.querySelector("h1").style.color = "tomato";
+  }
 });

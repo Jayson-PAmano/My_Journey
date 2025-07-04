@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS DOM Practice</title>
+    <style>
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: whitesmoke;
+        color: #555;
+        text-align: center;
+      }
+
+      #myDiv1 {
+        display: inline-block;
+        margin: 5em auto;
+      }
+      label {
+        font-size: 1.5em;
+        margin: 0.5em 0.2em;
+      }
+      #num1,
+      #num2 {
+        min-height: 1.8em;
+        border: 1px double sienna;
+      }
+      #myBtn {
+        border: none;
+        border-radius: 5px;
+        padding: 0.3em 1em;
+        margin-left: 3em;
+        text-transform: uppercase;
+        font: 500 1em tahoma;
+        background-color: seagreen;
+        color: #ececec;
+        transition: all 0.6s ease-out;
+      }
+      #myBtn:hover {
+        cursor: pointer;
+        box-shadow: 0px 2px 5px #333;
+        background-color: rgb(47, 153, 93);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Please Enter your Number:</h1>
+    <div id="myDiv1">
+      <label for="num1">Number1: </label>
+      <input type="number" name="num1" id="num1" placeholder="e.g 23" />
+      <br /><br />
+      <label for="num1">Number2: </label>
+      <input type="number" name="num2" id="num2" placeholder="e.g 54" />
+      <br /><br />
+      <input type="button" value="Submit" id="myBtn" />
+      <h3 id="results"></h3>
+    </div>
+
+    <script src="js2/dom2.js"></script>
+  </body>
+</html>
